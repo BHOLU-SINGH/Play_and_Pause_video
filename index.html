@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play and Pause Video Project | Free Projects1</title>
+    <meta name="keywords" content="play and pause, play and pause shortcut, js play and pause video, play and pause button html, play and pause video javascript, play and pause video on click, html video tag, html video autoplay, html video player, html video autoplay loop, html video autoplay loop muted, html video controls, html video autoplay not working, html video code, html css video tag, html css video background, html css video player template, html css video slider, html css video cover, html css video carousel, js video play pause, video javascript events, video javascript play, video javascript controls, video javascript fullscreen, video javascript stop, video javascript download, free projects with source code and documentation, free projects download, free projects for all, free projects with source code, free projects download sites, free projects for cse, free projects for computer science students, free project 1, free projects1, free projects for computer science, free projects on github, free source code for website, free source code projects, free source code download, free source code for website design in html, free projects, free projects 1 blog, freeprojectsforall, free project download, free project, free project file, free project download with source code, free projects 1 blog">
+    <meta name="description" content="It is a free video play and pause effect using JavaScript. In this project, whenever you will move your cursor on particular video only that video running other videos in pause mode.">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <video src="videos/clip1.mp4" type="video/mp4" class="video" loop muted></video>
+        </div>
+        <div class="box">
+            <video src="videos/clip2.mp4" type="video/mp4" class="video" loop muted></video>
+        </div>
+        <div class="box">
+            <video src="videos/clip3.mp4" type="video/mp4" class="video" loop muted></video>
+        </div>
+        <div class="box">
+            <video src="videos/clip4.mp4" type="video/mp4" class="video" loop muted></video>
+        </div>
+    </div>
+
+    <script>
+        const video = document.querySelectorAll('.video');
+        for (let i = 0; i < video.length; i++) {
+            video[i].addEventListener('mouseenter', function(e) {
+                video[i].play();
+            })
+            video[i].addEventListener('mouseout', function(e) {
+                video[i].pause();
+            })
+        }
+    </script>
+</body>
+
+</html>
